@@ -1,0 +1,331 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
+}
+
+body {
+  height: 100%;
+}
+
+header nav {
+  width: 100vw;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li {
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  padding: 1rem 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80vh;
+}
+
+main section.left {
+  border-right: 5px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  padding: 3rem 1rem;
+}
+
+main section.left form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section.left form div.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.left form div.input label {
+  font-size: 3rem;
+  width: 30%;
+}
+
+main section.left form div.input input {
+  width: 70%;
+}
+
+main section.left form div.sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.left form div.sub button {
+  display: block;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  margin-left: 1rem;
+}
+
+main section.right div.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main section.right div.content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.right div.content div h2 {
+  font-size: 3rem;
+}
+
+main section.right div.medialogo img {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1440px) {
+  header nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header nav ul li {
+    margin: 0.1rem;
+    border: black 2px solid;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  header nav ul li a {
+    font-size: 2vw;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  main section.left {
+    border-right: none;
+    border-bottom: 5px solid black;
+  }
+  main section.left form div {
+    margin: 1rem;
+  }
+  main section.left form div.input label {
+    font-size: 5vw;
+  }
+  main section.left form div.sub button {
+    font-size: 5vw;
+  }
+  main section.right div.content {
+    margin: 1rem;
+  }
+  main section.right div.content div h2 {
+    font-size: 4vw;
+    margin: 0 1rem;
+  }
+  main section.right div.medialogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.right div.medialogo img {
+    display: block;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  header nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header nav ul li {
+    margin: 0.1rem;
+    border: black 2px solid;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main section.left {
+    width: 100vw;
+  }
+  main section.left form {
+    padding: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.left form div.input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0;
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
+    padding: 0 0.2rem;
+  }
+  main section.left form div.input label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    font-size: 4vw;
+    text-align: right;
+  }
+  main section.left form div.input input {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 0px;
+            flex: 3 1 0px;
+    border-radius: none;
+    margin-right: 1rem;
+  }
+  main section.left form div.sub {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  main section.left form div.sub button {
+    display: block;
+    font-size: 4vw;
+    padding: 0.5rem;
+  }
+  main section.right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0px;
+  }
+  main section.right div.content div {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.right div.content div h2 {
+    font-size: 1rem;
+  }
+  main section.right div.content div.phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.right div.content div.phone h2 {
+    font-size: 1rem;
+  }
+  main section.right div.medialogo img {
+    margin: 0 1rem;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+/*# sourceMappingURL=content.css.map */

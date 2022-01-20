@@ -1,0 +1,31 @@
+div.animation {
+  height: 100vh;
+  width: 100%;
+  background-color: #ff7a00;
+  position: fixed;
+  top: 0;
+  left: -1920px;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.one {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,201 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Noto Serif TC", serif;
+}
+
+header {
+    nav {
+        width: 100%;
+        ul {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                list-style-type: none;
+                flex: 1 1 250px;
+                padding: 1rem 2rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    section.left {
+        flex: 2 1 0px;
+        div.content {
+            display: flex;
+            padding: 1rem;
+            margin: 0 2rem;
+            border-bottom: 2px solid black;
+            h3 {
+                max-width: 210px;
+                flex: 1 1 50px;
+                font-size: 2rem;
+                margin: 1rem 0px;
+            }
+
+            p {
+                flex: 3 1 0px;
+                font-size: 1.5rem;
+            }
+
+            img {
+                margin: 0 1rem;
+                height: 10vh;
+                width: 10vh;
+            }
+
+            div.logo{
+                img{
+                    width: 10vw;
+                    height: 10vw;
+                }
+            }
+        }
+    }
+
+    section.right {
+        flex: 1 1 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin: auto;
+            width: 70vh;
+            height: 70vh;
+            border-radius: 25%;
+            box-shadow: 1rem 1rem #e08958;
+        }
+    }
+}
+
+div.medialogo {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    img {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width: 1440px) {
+    header {
+        nav {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    margin: 0.1rem;
+                    border: black 2px solid;
+                    flex-basis: 100px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    a {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        section.right{
+            img{
+                height: 40vh;
+                width: 40vh;
+            }
+        }
+    }
+
+    div.medialogo{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:500px) {
+    header {
+        nav {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    margin: .1rem;                    
+                    border: black 2px solid;
+                    flex-basis: 100px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    a{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        section.left{
+            display: flex;
+            flex-direction: column;
+            div.content{
+                display: flex;
+                flex-direction: column;
+                margin: 0px .5rem ;
+                padding: 0px;   
+                h3{
+                    font-size: 1rem;
+                    padding: 1rem;
+                    margin: 0px;
+                    text-decoration: underline;
+                }
+                p{  
+                    font-size: .5rem;
+                    padding: 0 1rem 1rem 1rem;
+                }             
+            }
+        }
+
+        section.right{
+            img{
+                padding: .5rem;
+                width: 25vh;
+                height: 25vh;
+                box-shadow: none;
+            }
+        }
+    }
+
+    div.medialogo{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,21 @@
+div.animation{
+    height: 100vh;
+    width: 100%;
+    background-color: #ff7a00;
+    position: fixed;
+    top: 0;
+    left: -1920px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform-origin: center;
+}
+
+.one{
+    transform: scale(0);
+}
+
+

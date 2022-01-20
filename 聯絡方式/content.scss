@@ -1,0 +1,264 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Noto Serif TC", serif;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    nav {
+        width: 100vw;
+        ul {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                list-style-type: none;
+                flex: 1 1 250px;
+                padding: 1rem 2rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    height: 80vh;
+    section.left {
+        border-right: 5px solid black;
+        flex: 1 1 500px;
+        padding: 3rem 1rem;
+        form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            div.input {
+                display: flex;
+                justify-content: space-between;
+                label {
+                    font-size: 3rem;
+                    width: 30%;
+                }
+                input {
+                    width: 70%;
+                }
+            }
+
+            div.sub {
+                display: flex;
+                justify-content: center;
+                button {
+                    display: block;
+                    font-size: 3rem;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    section.right {
+        flex: 1 1 500px;
+        margin-left: 1rem;
+        div.content {
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            justify-content: space-evenly;
+            div {
+                display: flex;
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        div.medialogo {
+            img {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1440px) {
+    header {
+        nav {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    margin: 0.1rem;
+                    border: black 2px solid;
+                    flex-basis: 100px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    a {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        section.left {
+            border-right: none;
+            border-bottom: 5px solid black;
+            form {
+                div {
+                    margin: 1rem;
+                }
+                div.input{
+                    label{
+                        font-size: 5vw;
+                    }
+                }
+
+                div.sub{
+                    button{
+                        font-size: 5vw;
+                    }
+                }
+            }
+        }
+
+        section.right {
+            div.content {
+                margin: 1rem;
+                div {
+                    h2 {
+                        font-size: 4vw;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+
+            div.medialogo {
+                display: flex;
+                justify-content: center;
+                img {
+                    display: block;
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    header {
+        nav {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                li {
+                    margin: 0.1rem;
+                    border: black 2px solid;
+                    flex-basis: 100px;
+                    padding: 0.5rem;
+                    text-align: center;
+                    a {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        // border: 2px solid red;
+        display: flex;
+
+        section.left {
+            width: 100vw;
+            form {
+                padding: 0px;
+                justify-content: center;
+
+                div.input {
+                    display: flex;
+                    margin: 1rem 0;
+                    flex-grow: 4;
+                    padding: 0 0.2rem;
+                    label {
+                        flex: 1 1 0px;
+                        font-size: 4vw;
+                        text-align: right;
+                    }
+                    input {
+                        flex: 3 1 0px;
+                        border-radius: none;
+                        margin-right: 1rem;
+                    }
+                }
+
+                div.sub {
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    button {
+                        display: block;
+                        font-size: 4vw;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        section.right {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0px;
+            div.content {
+                div {
+                    margin: 1rem;
+                    h2 {
+                        font-size: 1rem;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                div.phone {
+                    h2 {
+                        font-size: 1rem;
+                    }
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            div.medialogo {
+                img {
+                    margin: 0 1rem;
+                    height: 5vh;
+                    width: 5vh;
+                }
+            }
+        }
+    }
+}
