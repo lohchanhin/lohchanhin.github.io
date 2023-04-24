@@ -128,3 +128,23 @@ hr{
   text-align :right;
   margin : 0px 0px 0px 110px;
 }
+
+/* 001.css */
+
+/* 其他樣式... */
+
+/* 根據屏幕大小調整 .Skill-Info 的 display 屬性 */
+.技能解說 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .技能解說 {
+    display: block;
+  }
+  .技能{
+    width: 100%;
+    margin: 5px;
+  }
+}
